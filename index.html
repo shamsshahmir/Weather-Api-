@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1> WEATHER FORECAST (5 DAYS)</h1>
+    </nav>
+    <div class="weatherapi" id="weather">
+        <div id="searchbar" class="search">
+            <div id="select" class="dropdown">
+                <p id="selectText">Search By</p>
+                <img src="pics/arrow.png">
+                <ul id="list" class="close">
+                    <li class="dropmen" id="cityName">City Name</li>
+                    <li class="dropmen" id="cityId">City Id</li>
+                    <li class="dropmen" id="zipCode">Zip Code </li>
+                </ul>
+
+            </div>
+            <input type="text" id="inputfield" placeholder="Search Term...">
+            <button type="submit" id="searchbutton"><i class="fa fa-search"></i></button>
+        </div>
+        <div id="wholecontainer" class="wholebox">
+            <div id="upperdata" class="upperbox">
+                <p id="city">Islamabad,<span id="country">PK</span></p> <br>
+                <p id="day">friday</p><br>
+                <p id="atmos">dummy</p>
+            </div>
+        </div>
+        <div id="infobox" class="infocontainer">
+            <div id="changesimg" class="imgsingle">
+                <img src="pics/sunny.png" id="imgfirstly">
+            </div>
+            <div id="temp" class="temperature">
+                <h1 id="temp10">29</h1>
+                <div id="celcius" >
+                    <p id ="cel"><span>&#176;</span>C</p>
+                </div>
+                <div id="fahrenheit">
+                    <p id="fel"><span>|</span><span>&#176;</span>F</p>
+                </div>
+            </div>
+            <div id="phw" class="pressure">
+                <p class="press">Pressure:<span id="actualpress"> 999.33hPa</span></p>
+                <p class="humid">Humidity:<span id="actualhumid"> 61%</span></p>
+                <p class="windsy">Wind Speed:<span id="actualwindsy"> 1.06 m/s</span></p>
+
+            </div>
+
+        </div>
+        <div id="weathercont" class="weathercontainer">
+            <div class="icons" id="icon1" tabindex="1">
+                <p id="day1" class="weatherboxes">Monday</p>
+                <div class="images"><img src="pics/snowy.png" class="imgClass" id="img1"></div>
+                <span id="hightemp1" class="htemp">28<span>&#176;</span></span> <span id="lowtemp1"
+                    class="ltemp">28<span>&#176;</span></span>
+            </div>
+            <div class="icons" id="icon2" tabindex="1">
+                <p id="day2" class="weatherboxes">Tuesday</p>
+                <div class="images"><img src="pics/rainy.png" class="imgClass" id="img2"></div>
+                <span id="hightemp2" class="htemp">28<span>&#176;</span></span><span id="lowtemp2"
+                    class="ltemp">28<span>&#176;</span></span>
+            </div>
+            <div class="icons" id="icon3" tabindex="1">
+                <p id="day3" class="weatherboxes">Wednesday</p>
+                <div class="images"><img src="pics/sunny.png" class="imgClass" id="img3"></div>
+                <span id="hightemp3" class="htemp">28<span>&#176;</span></span><span id="lowtemp3"
+                    class="ltemp">28<span>&#176;</span></span>
+            </div>
+            <div class="icons" id="icon4" tabindex="1">
+                <p id="day4" class="weatherboxes">Thursday</p>
+                <div class="images"><img src="pics/thunder.png" class="imgClass" id="img4"></div>
+                <span id="hightemp4" class="htemp">28<span>&#176;</span></span> <span id="lowtemp4"
+                    class="ltemp">28<span>&#176;</span></span>
+            </div>
+            <div class="icons" id="icon5" tabindex="1">
+                <p id="day5" class="weatherboxes">Friday</p>
+                <div class="images"><img src="pics/snowy.png" class="imgClass" id="img5"></div>
+                <span id="hightemp5" class="htemp">28<span>&#176;</span></span> <span id="lowtemp5"
+                    class="ltemp">28<span>&#176;</span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
